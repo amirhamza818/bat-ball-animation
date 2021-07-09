@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .bat{
+            transition: transform 0.3s ease-in;
+        }
+        .field{
+            width: 1000px;
+            height: 475px;
+            border:1px solid ;}
+            .ball{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                border-radius: 50%;
+                position: relative;
+               left: 690px;
+               transition: transform 1s ease-out 0.3s;
+            }
+            .field:hover .ball{
+                transform: translate(500px,-200px)
+            }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div class="field"><img class="bat" src="images/V3_1_Main_0223312-removebg-preview.png" alt="">
+    <div class="ball"></div></div>
+</body>
+</html>
